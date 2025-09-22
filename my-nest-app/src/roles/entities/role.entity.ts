@@ -1,16 +1,17 @@
-// src/roles/entities/role.entity.ts
+import { User } from 'src/users/entities/user.entity';
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 
-/**
- * Representa un rol en el sistema.
- */
+@Entity()
 export class Role {
-        id: number;
-        name: string;
-        description: string;
+    @PrimaryGeneratedColumn()
+    id: number;
 
-        constructor(id: number, name: string, description: string) {
-                this.id = id;
-                this.name = name;
-                this.description = description;
-        }
+    @Column()
+    name: string;
+
+    @Column()
+    description: string;
+
+    @OneToMany(() => User, (user) => user.role)
+    users: User[];
 }
