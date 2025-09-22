@@ -19,8 +19,8 @@ Este taller muestra la evolución de un proyecto NestJS:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <URL_DEL_REPO>
-cd <NOMBRE_DEL_PROYECTO>
+git clone "https://github.com/Computacion-3/tarea-nest-intro-Andres-Chamorro.git"
+cd my-nest-app
 ```
 
 ### 2. Instalar dependencias
