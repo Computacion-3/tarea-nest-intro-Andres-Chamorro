@@ -53,7 +53,7 @@ La API estará disponible en [http://localhost:3000](http://localhost:3000).
 
 ---
 
-## 📂 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 src/
